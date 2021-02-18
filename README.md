@@ -10,7 +10,7 @@ Front end build system: Webpack and Tailwind CSS
 
 ### Clone repo
 ```
-git clone https://github.com/andyzack/my-craft-demo.git`
+git clone https://github.com/andyzack/andrewcraft.git`
 ```
 ### Install Craft CMS locally
 ```
@@ -24,12 +24,12 @@ composer install
   - Copy .env.dev to create .env file
   - Change the database credentials (if needed)
 
-http://my-craft-demo.test/admin
+http://andrewcraft/admin
 
 
 ### Admin panel
 After the above steps, you should be able to login to the admin panel locally
-http://my-craft-demo.test/admin
+http://andrewcraft/admin
 
 
 
