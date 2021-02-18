@@ -1,0 +1,56 @@
+contentColumnType: string
+fieldGroup: 97fa4163-0da8-47b1-a9ec-e6f4382ff078
+handle: wineType
+instructions: ''
+name: 'Wine type'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Pinot Noir'
+        -
+          - value
+          - pinotNoir
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Sauvignon Blanc'
+        -
+          - value
+          - sauvignonBlanc
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Block Chardonnay'
+        -
+          - value
+          - blockChardonnay
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - ''
+        -
+          - value
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

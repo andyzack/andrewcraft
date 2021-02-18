@@ -1,0 +1,60 @@
+<header class="c-header">
+  <nav class="container mx-auto lg:px-4 lg:py-4" role="navigation" aria-label="Main">
+    <div class="hidden lg:block px-2 xl:px-5">
+      <a href="#">
+        <div class="flex items-center justify-end">
+          <span class="p-2">{{ svg('@webroot/uploads/icon-cart.svg')|attr({ class: 'w-auto h-5 text-gray-800' }) }}</span>
+          <span class="text-gray-800 uppercase font-montserrat text-xs pt-1">Checkout</span>
+        </div>
+      </a>
+    </div>
+    <ul class="flex items-center justify-around w-full mx-auto px-2 xl:px-5">
+      <li class="w-1/2">
+        <ul class="hidden lg:flex items-center justify-start">
+          <li class="mr-4 lg:mr-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out js-toggle-button {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#Wine') }}">Wine</a>
+            <div class="c-submenu hidden absolute transition duration-500 ease-in-out mt-4">
+              <ul class="bg-white p-3 border-gray-800 border-4 border-double">
+                <li><a href="#" class="p-2 inline-block">Our Range</a></li>
+                <li><a href="#" class="p-2 inline-block">Our Vinyard</a></li>
+                <li><a href="#" class="p-2 inline-block">Cellar Door</a></li>
+                <li><a href="#" class="p-2 inline-block">Terracotta</a></li>
+                <li><a href="#" class="p-2 inline-block">Friends of Trofeo</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mr-4 lg:mr-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out js-toggle-button {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#Food') }}">Food</a>
+            <div class="c-submenu hidden absolute transition duration-500 ease-in-out mt-4">
+              <ul class="bg-white p-3 border-gray-800 border-4 border-double">
+                <li><a href="#" class="p-2 inline-block">Our Range</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mr-4 lg:mr-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out js-toggle-button {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#Weddings') }}">Weddings</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="lg:text-xl" href="{{ siteUrl }}">
+          <span class="sr-only">{{ siteName }}</span>
+          {{ svg('@webroot/uploads/logo.svg')|attr({ class: 'c-header__logo w-auto md:h-24 lg:h-32 text-gray-900' }) }}
+        </a>
+      </li>
+      <li class="w-1/2">
+        <ul class="hidden lg:flex items-center justify-end">
+          <li class="ml-4 lg:ml-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#Visit') }}">Visit & Stay</a>
+          </li>
+          <li class="ml-4 lg:ml-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#About') }}">About</a>
+          </li>
+          <li class="ml-4 lg:ml-10">
+            <a class="lg:text-xl whitespace-no-wrap hover:text-gray-700 transition duration-500 ease-in-out {{ firstSegment == 'text-yellow-700' ? 'border-b border-yellow-700' }}" href="{{ url('#Contact') }}">Contact</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

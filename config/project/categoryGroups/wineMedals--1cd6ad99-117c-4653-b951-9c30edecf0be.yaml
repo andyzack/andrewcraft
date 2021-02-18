@@ -1,0 +1,49 @@
+fieldLayouts:
+  1e91f807-0c72-4394-b794-0c4d718121dc:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: fd4a4e9a-a2d2-4c24-a4b2-71529b208ac7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: wineMedals
+name: 'Wine Medals'
+siteSettings:
+  f3400d6f-0f33-4cef-9521-f8f6620399ec:
+    hasUrls: true
+    template: _private/medals
+    uriFormat: 'medals/{slug}'
+structure:
+  maxLevels: 3
+  uid: e634d33c-07d6-4648-9b11-d9925e5e2bdf

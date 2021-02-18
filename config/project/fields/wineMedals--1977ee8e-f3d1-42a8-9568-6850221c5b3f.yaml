@@ -1,0 +1,23 @@
+contentColumnType: string
+fieldGroup: 32624ca6-5ede-4b58-80f2-764aeb66adf3
+handle: wineMedals
+instructions: ''
+name: 'Wine Medals'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: '1'
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: 'group:1cd6ad99-117c-4653-b951-9c30edecf0be'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

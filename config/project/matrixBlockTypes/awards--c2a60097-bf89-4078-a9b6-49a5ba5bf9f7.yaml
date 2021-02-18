@@ -1,0 +1,84 @@
+field: 83d88e9d-8b89-4613-aeb6-4c173a4b96a4
+fieldLayouts:
+  90f5b42f-2b84-4a49-9575-5e8d5c527614:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 82e562f5-2932-4876-b4fc-09bcdb5c5db7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 67e51f14-8956-41c0-8840-0017384cd5fa
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  67e51f14-8956-41c0-8840-0017384cd5fa:
+    contentColumnType: text
+    fieldGroup: null
+    handle: awardsEvent
+    instructions: ''
+    name: 'Awards Event'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  82e562f5-2932-4876-b4fc-09bcdb5c5db7:
+    contentColumnType: string
+    fieldGroup: null
+    handle: awardsType
+    instructions: ''
+    name: 'Awards Type'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Gold
+            -
+              - value
+              - gold
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - Silver
+            -
+              - value
+              - silver
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: awards
+name: awards
+sortOrder: 1

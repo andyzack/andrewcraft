@@ -1,0 +1,28 @@
+{
+    "__created_at": 1526453291,
+    "__updated_at": 1526453291,
+    "data": {
+        "id": "1",
+        "slug": "2013-trofeo-estate",
+        "title": "2013 Trofeo Estate",
+        "type": "Pinot Noir",
+        "price": 42,
+        "description": "5 years in the making, our Cuvee offers a fine beaded mousse that is persistent until the very last drop. The delightful blend of 98% Pinot Noir and 2% Pinot Meunier create subtle red fruit aromas complimented on the palate by a touch of creaminess. A perfect balance between dryness and acidity results in a bright, crisp bubbly that can be enjoyed anywhere, anytime.",
+        "region": "Mornington Peninsula",
+        "harvest": "5th – 15th March",
+        "year": 2013,
+        "clones": ["MV6", "114"],
+        "method": "All grapes were hand harvested between 5th March and 15th March. Picking dates were selected based on analysis and sample tasting. Grapes were destemmed into open top fermenters, covered and left to cold soak for 4 days. The fermentation was allowed to start naturally. Cap management was maintained by plunges and pump overs daily depending on taste, extraction rate, temperature and how far through ferment the wine was. Grapes were left to soak post ferment for a period of time which was dependent on taste. Typically 5-7 days. The wine was pressed off into old French oak barriques and Terracotta Amphorae and allowed to undergo malolactic fermentation.  The wine was left to age for up to 10 months in a cool environment. Wine was then racked, blended, left un-fined, sterile filtered and bottled.",
+        "awards": [
+            {
+                "type": "gold",
+                "event": "2016 INTERNATIONAL COOL CLIMATE WINE SHOW"
+            },
+            {
+                "type": "silver",
+                "event": "2014 MORNINGTON PENINSULA VIGNERONS WINE SHOW"
+            }
+        ],
+        "food-pairing": ["meat", "fish"]
+    }
+}

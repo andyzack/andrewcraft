@@ -1,0 +1,24 @@
+{
+    "__created_at": 1526453291,
+    "__updated_at": 1526453291,
+    "data": {
+        "id": "5",
+        "slug": "2017-trofeo-estate-terzetto",
+        "title": "2017 Trofeo Estate Terzetto",
+        "type": "Pinot Noir",
+        "price": 30,
+        "description": "Fermented in the bottle, this lovely sparkling offers bright red fruits on approach, overlaying ripe stone fruit and green pear characteristics. Refreshingly dry and crisp on the finish, our Terzetto is sure to be enjoyed on any occasion.",
+        "region": "",
+        "harvest": "10th March",
+        "year": 2017,
+        "clones": [],
+        "method": "Terzetto, meaning threesome in Italy, is a unique blend of three grapes- Pinot Noir, Chardonnay and Pinot Gris.",
+        "awards": [
+            {
+                "type": "gold",
+                "event": "2017 MORNINGTON PENINSULA VIGNERONS WINE SHOW"
+            }
+        ],
+        "food-pairing": []
+    }
+}

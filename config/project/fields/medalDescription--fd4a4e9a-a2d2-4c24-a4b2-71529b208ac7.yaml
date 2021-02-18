@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 32624ca6-5ede-4b58-80f2-764aeb66adf3
+handle: medalDescription
+instructions: ''
+name: 'Medal Description'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

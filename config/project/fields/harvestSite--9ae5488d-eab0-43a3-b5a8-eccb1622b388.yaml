@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 97fa4163-0da8-47b1-a9ec-e6f4382ff078
+handle: harvestSite
+instructions: ''
+name: 'Harvest SITE'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

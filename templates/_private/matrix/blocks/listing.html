@@ -1,0 +1,16 @@
+{#
+  Renders the Hero Content field's Image Carousel block
+#}
+{% import "_private/macros/images" as images %}
+
+{% set assets = block.images.all() %}
+{% set carouselId = 'swiper-' ~ block.id %}
+
+{% for asset in assets %}
+<div class="swiper-slide" data-hash="{{ 'slide' ~ loop.index }}">
+  <a href="{{ asset.url }}" class="font-staatliches text-xl md:text-2xl text-orange-600 uppercase text-center px-8 py-4 leading-none flex items-center justify-center flex-col">
+    {{ images.img(asset, [350, 700, 1400], 1)|attr({ class: 'h-24 w-auto md:h-20 text-gray-900 pb-6' }) }}
+    <span class="pb-6">{{ asset.caption }}</span>
+  </a>
+</div>
+{% endfor %}

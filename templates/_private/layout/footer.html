@@ -1,0 +1,38 @@
+<footer class="c-footer bg-gray-800 text-white mt-10 lg:mt-20">
+  <div class="container mx-auto py-4 px-4" role="navigation" aria-label="Main">
+    <div class="text-center text-base font-bold uppercase tracking-widest p-6">TROFEO ESTATE</div>
+    <div class="lg:flex flex-wrap items-center justify-between w-full">
+      <div>
+        <div class="flex items-center justify-center flex-wrap w-full py:4 lg:py-10">
+          <div class="flex-initial flex items-center justify-center py-3 px-6">
+            {{ svg('@webroot/uploads/tripadvisor-logo.svg')|attr({ class: 'w-auto h-12' }) }}
+            <div class="flex-initial flex items-center justify-center py-3 px-6">
+              <span>{{ svg('@webroot/uploads/star.svg')|attr({ class: 'w-auto h-4 mr-2' }) }}</span>
+              <span>{{ svg('@webroot/uploads/star.svg')|attr({ class: 'w-auto h-4 mr-2' }) }}</span>
+              <span>{{ svg('@webroot/uploads/star.svg')|attr({ class: 'w-auto h-4 mr-2' }) }}</span>
+              <span>{{ svg('@webroot/uploads/star.svg')|attr({ class: 'w-auto h-4 mr-2' }) }}</span>
+              <span>{{ svg('@webroot/uploads/star-half.svg')|attr({ class: 'w-auto h-4 mr-2' }) }}</span>
+            </div>
+          </div>
+          <div class="flex-initial flex items-center justify-center py-3 px-6">
+            {{ svg('@webroot/uploads/socials-facebook.svg')|attr({ class: 'w-auto h-12 mr-4' }) }}
+            {{ svg('@webroot/uploads/socials-twitter.svg')|attr({ class: 'w-auto h-12 mr-4' }) }}
+            {{ svg('@webroot/uploads/socials-instagram.svg')|attr({ class: 'w-auto h-12 mr-4' }) }}
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex-initial flex items-center justify-center py-3 px-6">
+          <a class="font-montserrat text-white text-sm font-bold py-3 px-12 border-white border-2 tracking-wider inline-block hover:bg-white hover:text-black transition duration-500 ease-in-out" href="{{ url('#privacy') }}">BOOK & ENQUIRE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-900 text-gray-500 text-center text-sm p-10 lg:flex lg:justify-center lg:items-center">
+    <div class="font-montserrat p-3">
+      Liquor Act 1982: It is an offence to sell or supply to or to obtain liquor on behalf of a person under age of 18 years.
+    </div>
+    <a class="font-montserrat text-gray-500 text-xs p-3 whitespace-no-wrap" href="{{ url('#privacy') }}">Privacy Policy</a>
+    <a class="font-montserrat text-gray-500 text-xs p-3 whitespace-no-wrap" href="https://www.evolution7.com.au/" target="_blank">Site by Evolution7</a>
+  </div>
+</footer>

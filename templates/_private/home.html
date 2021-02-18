@@ -1,0 +1,41 @@
+{% extends "_private/layout" %}
+
+{% block content %}
+<div class="min-h-full">
+  <h1 class="text-4xl text-black text-center font-display my-4">
+    Welcome to TROFEO ESTATE!
+  </h1>
+
+  <p class="text-2xl text-black text-center font-display my-4">
+    Award winning wine and incredibly the best in town :)
+    <br /><br />
+    <a class="font-montserrat text-black text-sm font-bold py-3 px-12 border-black border-2 tracking-wider inline-block hover:bg-black hover:text-white transition duration-500 ease-in-out" href="{{ url('our-wines') }}">Checkout the Menu and Order Now!!!</a>
+  </p>
+
+  {% set query = craft.entries()
+    .section('blog')
+    .limit(10) %}
+
+  {% paginate query as pageInfo, pageEntries %}
+
+  {% if pageInfo.currentPage == 1 %}
+    {{ entry.siteIntroduction }}
+  {% endif %}
+
+  {% for blogEntry in pageEntries %}
+    <article class="mt-8">
+      <h2 class="text-2xl font-display">
+        <a class="text-blue-600" href="{{ blogEntry.url }}">{{ blogEntry.title }}</a>
+      </h2>
+      <time class="text-sm block pb-4" datetime="{{ blogEntry.postDate | date('Y-m-d') }}">{{ blogEntry.postDate | date('d M Y') }}</time>
+
+      <div class="text-gray-800">
+        {{ blogEntry.summary }}
+      </div>
+
+      <p class="pt-2"><a href="{{ blogEntry.url }}" class="text-blue-600">Read more &hellip;</a></p>
+    </article>
+  {% endfor %}
+
+</div>
+{% endblock %}

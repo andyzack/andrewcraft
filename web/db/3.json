@@ -1,0 +1,24 @@
+{
+    "__created_at": 1526453291,
+    "__updated_at": 1526453291,
+    "data": {
+        "id": "3",
+        "slug": "2016-trofeo-estate-amphora",
+        "title": "2016 Trofeo Estate Amphora",
+        "type": "Sauvignon Blanc",
+        "price": 30,
+        "description": "This Mornington Peninsula grown Sauvignon Blanc has been 100% fermented and matured in Florentine Terracotta Amphorae. Passionfruit, ripe lychees and pineapple dominate on both the aroma and palate. A smooth, soft mouthfeel and refreshing crisp acidity unite to create a youthful, fruity wine that will quench any thirst.",
+        "region": "Mornington Peninsula",
+        "harvest": "6th March",
+        "year": 2016,
+        "clones": [],
+        "method": "This cool climate Sauvignon Blanc has been 100% fermented and aged in Florentine Terracotta Amphorae.",
+        "awards": [
+            {
+                "type": "silver",
+                "event": "2016 MORNINGTON PENINSULA VIGNERONS WINE SHOW"
+            }
+        ],
+        "food-pairing": ["meat"]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "__created_at": 1526453291,
+    "__updated_at": 1526453291,
+    "data": {
+        "id": "4",
+        "slug": "2016-trofeo-estate-amphora-single-chardonnay",
+        "title": "2016 Trofeo Estate Amphora Single",
+        "type": "Block Chardonnay",
+        "price": 50,
+        "description": "This cool climate Chardonnay has been 100% fermented and aged in Florentine Terracotta Amphorae. Subtle aromas of caramel and butterscotch overlay those of ripe nectarines and sweet citrus. The creamy, textural palate that is generous on approach, finishes with a refreshing citrus burst, creating a moorish wine of great structure and length",
+        "region": "Mornington Peninsula",
+        "harvest": "23rd February – 3rd March",
+        "year": 2016,
+        "clones": [],
+        "method": "This cool climate Chardonnay has been 100% fermented and aged in Florentine Terracotta Amphorae.",
+        "awards": [],
+        "food-pairing": ["fish"]
+    }
+}

@@ -1,0 +1,23 @@
+enableVersioning: true
+handle: wines
+name: our-wines
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  f3400d6f-0f33-4cef-9521-f8f6620399ec:
+    enabledByDefault: true
+    hasUrls: true
+    template: _private/wines
+    uriFormat: 'our-wines/{slug}'
+type: channel
