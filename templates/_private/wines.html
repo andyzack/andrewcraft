@@ -8,11 +8,15 @@
 <div class="lg:px-2 lg:py-4 mb-10">
   <div class="-mx-4 px-3 lg:px-0 bg-yellow-300 bg-no-repeat bg-contain bg-left" style="background-image: url(/uploads/bg-illustration.png);">
     <div class="md:flex flex-row justify-center items-center h-full">
+
+      {# HERO - IMAGE #}
       <div class="flex-1 h-full md:flex hidden justify-end">
         {% for asset in assets %}
             {{ images.img(asset, [350, 700, 1400], 1/2)|attr({ class: 'w-full md:pb-16 md:-mb-56 md:-mr-16' }) }}
         {% endfor %}
       </div>
+
+      {# HERO - AWARDS BADGE #}
       <div class="flex-1 px-12 border-black border-double border-r-4 border-light-blue-500 md:py-20" style="min-height: 700px;">
         <div class="c-badge-medals flex items-start mb-4 pt-8">
           <span class="border-gray-800 border-4 border-double rounded-full w-20 h-20 flex flex-wrap justify-center items-center font-montserrat text-sm bold uppercase bg-yellow-300 relative z-10 transform -rotate-12">Gold</span>
@@ -26,8 +30,12 @@
           {% endfor %}
         </div>
       </div>
+
+      {# HERO - RIGHT CONTENT SECTION #}
       <div class="flex-1 px-12 pt-10 lg:pt-16 pb-10">
         <div class="font-montserrat text-xs">
+
+          {# HARVEST DETAILS #}
           <div>
             HARVEST DATE: {{ entry.harvestDate  }} <br />
             BAUMÉ: {{ entry.harvestBaume }}˚ <br />
@@ -42,18 +50,19 @@
             </div>
           </div>
 
+          {# AWARDS DESCRIPTION #}
           <div class="flex flex-col items-left justify-center lg:w-2/3 my-2  lg:my-4">
             <div class="border-b border-gray-800 border-solid p-0 py-3">
               <strong>GOLD</strong> medal 2014 Mornington  <br />
               Peninsula Vignerons Wine Show
             </div>
-            
             <div class="border-b border-gray-800 border-solid p-0 py-3">
               <strong>SILVER</strong> medal, 2016 International <br />
               Cool Climate Wine Show
             </div>
           </div>
 
+          {# PRICE SECTION #}
           <div class="flex justify-between items-center h-full w-full my-10 lg:my-16">
             <div class="m-auto">
               <label class="font-montserrat text-sm uppercase font-bold block text-center mt-10" for="qty">QTY</label>
@@ -89,30 +98,44 @@
     <!-- FOR EACH LOOP -->
     <div class="flex flex-wrap -mx-4 px-3 lg:px-0">
       <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-white border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single-1">
-          <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Rose.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Rose.png 350w" alt="" sizes="100vw">          
+        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single-1">
+          <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Rose.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Rose.png 350w" alt="" sizes="100vw">
           <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2016 Trofeo Estate Amphora Single</h2>
-          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8">
+          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
+            <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
             $<span class="text-xl">20</span>.00
           </div>
           <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>
         </a>
       </div>
       <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-white border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2017-trofeo-estate-terzetto">
-          <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Pinot-Gris.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Pinot-Gris.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Pinot-Gris.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Pinot-Gris.png 350w" alt="" sizes="100vw">          
+        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2017-trofeo-estate-terzetto">
+          <div class="relative text-center w-full">
+            <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Rose.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Rose.png 350w" alt="" sizes="100vw">
+            {# AWARDS BADGE - SUBSECTION #}
+            <div class="absolute bottom-0 right-0 pb-16 pr-6">
+              <div class="c-badge-medals flex items-end mb-4 pt-8">
+                <span class="border-white border-4 border-double rounded-full w-16 h-16 flex flex-wrap justify-center items-center font-montserrat text-xs bold uppercase text-white bg-yellow-900 relative z-10 transform -rotate-12">Gold</span>
+                <span class="border-white border-4 border-double rounded-full w-16 h-16 flex flex-wrap justify-center items-center font-montserrat text-xs bold uppercase text-white bg-gray-600 relative transform -rotate-12 -ml-3">Silver</span>
+              </div>
+            </div>
+            {# END AWARDS BADGE - SUBSECTION #}
+          </div>
+
           <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2017 Trofeo Estate Terzetto</h2>
-          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8">
+          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
+            <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
             $<span class="text-xl">0</span>.00
           </div>
           <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>        
         </a>
       </div> 
       <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-white border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single">
+        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single">
           <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2013-85-Chardonnay.png" srcset="/uploads/_1400x4200_crop_center-center_none/2013-85-Chardonnay.png 1400w, /uploads/_700x2100_crop_center-center_none/2013-85-Chardonnay.png 700w, /uploads/_350x1050_crop_center-center_none/2013-85-Chardonnay.png 350w" alt="" sizes="100vw">          
           <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2016 Trofeo Estate Amphora Single</h2>
-          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8">
+          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
+            <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
             $<span class="text-xl">50</span>.00
           </div>
           <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>    
