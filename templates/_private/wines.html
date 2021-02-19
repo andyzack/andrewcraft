@@ -92,26 +92,32 @@
   Notes:  1) Setup Categories and Category Group based on Wine Types on Craft CMS
           2) Create reusable component
 #}
+
+{# Create a new category query #}
+{% set myCategoryQuery = craft.categories() %}
+
+{# Create a category query with the 'group' parameter #}
+{% set myCategoryQuery = craft.categories().group('topics') %}
+
+{# Fetch the categories #}
+{% set categories = myCategoryQuery.all() %}
+
 <div class="lg:px-2 lg:py-4 mb-10 mt-8">
   <h2 class="font-montserrat text-gray-900 text-sm font-bold py-3 px-6 tracking-wider text-center">YOU MIGHT ALSO LIKE</h2>
   <div class="lg:px-2 lg:py-4 mb-10">
     <!-- FOR EACH LOOP -->
     <div class="flex flex-wrap -mx-4 px-3 lg:px-0">
+
+      {% for wine in craft.entries.section('wines').relatedTo(categories) %}
+
+      {% set assetsCat = wine.wineImage.all() %}
+
       <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single-1">
-          <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Rose.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Rose.png 350w" alt="" sizes="100vw">
-          <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2016 Trofeo Estate Amphora Single</h2>
-          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
-            <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
-            $<span class="text-xl">20</span>.00
-          </div>
-          <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>
-        </a>
-      </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2017-trofeo-estate-terzetto">
+        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="{{ wine.url }}">
           <div class="relative text-center w-full">
-            <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png" srcset="/uploads/_1400x4200_crop_center-center_none/2015-TE-Rose.png 1400w, /uploads/_700x2100_crop_center-center_none/2015-TE-Rose.png 700w, /uploads/_350x1050_crop_center-center_none/2015-TE-Rose.png 350w" alt="" sizes="100vw">
+            {% for asset in assetsCat %}
+              {{ images.img(asset, [350, 700, 1400], 1/3)|attr({ class: 'h-40 lg:h-64 my-6 ml-auto mr-auto' }) }}
+            {% endfor %}
             {# AWARDS BADGE - SUBSECTION #}
             <div class="absolute bottom-0 right-0 pb-16 pr-6">
               <div class="c-badge-medals flex items-end mb-4 pt-8">
@@ -122,25 +128,15 @@
             {# END AWARDS BADGE - SUBSECTION #}
           </div>
 
-          <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2017 Trofeo Estate Terzetto</h2>
+          <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">{{ wine.title }}</h2>
           <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
             <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
-            $<span class="text-xl">0</span>.00
+            $<span class="text-xl">{{ wine.price }}</span>.00
           </div>
           <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>        
         </a>
       </div> 
-      <div class="w-full sm:w-1/2 lg:w-1/3 px-4 py-4">
-        <a class="flex flex-col relative justify-center items-start text-gray-800 text-left border-2 border-gray-500 lg:border-white p-6 lg:p-12 hover:border-black transition duration-500 ease-in-out" href="/our-wines/2016-trofeo-estate-amphora-single">
-          <img class="h-40 lg:h-64 my-6 ml-auto mr-auto" src="/uploads/_1400x4200_crop_center-center_none/2013-85-Chardonnay.png" srcset="/uploads/_1400x4200_crop_center-center_none/2013-85-Chardonnay.png 1400w, /uploads/_700x2100_crop_center-center_none/2013-85-Chardonnay.png 700w, /uploads/_350x1050_crop_center-center_none/2013-85-Chardonnay.png 350w" alt="" sizes="100vw">          
-          <h2 class="text-lg lg:text-2xl leading-tight mb-4 lg:h-16 text-center">2016 Trofeo Estate Amphora Single</h2>
-          <div class="text-center text-xs font-ptserif text-white bg-black px-2 py-1 absolute right-0 top-0 m-8 h-10">
-            <div class="border-black border-solid transform absolute w-0 h-10 top-0 bottom-0 left-0 c-shape-trapezoid"></div>
-            $<span class="text-xl">50</span>.00
-          </div>
-          <div class="font-montserrat text-gray-800 text-sm  text-center mr-auto ml-auto py-3 px-0 border-gray-800 border-b-2 tracking-wider inline-block hover:text-black hover:border-black transition duration-500 ease-in-out" href="{{ url('our-wines') }}">LEARN MORE</div>    
-        </a>
-      </div>
+      {% endfor %}
     </div>
     <!-- END FOR EACH LOOP -->
 

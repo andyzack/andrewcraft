@@ -1,0 +1,79 @@
+contentColumnType: string
+fieldGroup: 2c1a5bc6-5250-4cfa-b26e-46fbe8468be1
+handle: foodPairings
+instructions: ''
+name: 'Food Pairings'
+searchable: false
+settings:
+  multi: true
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - meat
+        -
+          - value
+          - meat
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - fish
+        -
+          - value
+          - fish
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - fruit
+        -
+          - value
+          - fruit
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - chips
+        -
+          - value
+          - chips
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - salad
+        -
+          - value
+          - salad
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - cheese
+        -
+          - value
+          - cheese
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

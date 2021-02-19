@@ -1,17 +1,8 @@
 fieldLayouts:
-  530b087e-53ac-4b35-9c18-50d0e7c2c06a:
+  4884df26-a040-4cee-9105-60b146820d89:
     tabs:
       -
         elements:
-          -
-            fieldUid: e3af8d1f-3ff7-4c2d-98eb-b3ff054fbda5
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -32,11 +23,11 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\TitleField
             warning: null
             width: 100
           -
-            fieldUid: 1977ee8e-f3d1-42a8-9568-6850221c5b3f
+            fieldUid: d72e808f-8b67-42ab-9b27-e3717f15cdda
             instructions: null
             label: null
             required: false
@@ -45,7 +36,16 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 83d88e9d-8b89-4613-aeb6-4c173a4b96a4
+            fieldUid: fc644121-35a9-46a7-8fa1-86fb16644cdc
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fb5526c4-64c1-42aa-92a6-a938eb15de17
             instructions: null
             label: null
             required: false
@@ -55,11 +55,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: awards
-hasTitleField: true
-name: Awards
-section: 1e328fb1-5a4c-4fa3-8c47-21395e2f76c0
-sortOrder: 1
-titleFormat: null
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: wineTypes
+name: 'Wine Types'
+siteSettings:
+  f3400d6f-0f33-4cef-9521-f8f6620399ec:
+    hasUrls: true
+    template: _private/wine-types
+    uriFormat: 'wine-types/{slug}'
+structure:
+  maxLevels: 5
+  uid: 63d3cd7d-7f56-4d9b-bc09-13e4be2c340b

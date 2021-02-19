@@ -1,0 +1,22 @@
+{% extends "_private/layout" %}
+
+{% block content %}
+
+<h1>{{ category.title }}</h1>
+--- 
+<p>{{ category.typesDescription }}</p>
+--- 
+<p>{{ category.starterPicks }}</p>
+--- 
+
+<ul>
+  {% for wine in craft.entries.section('wines').relatedTo(category).all() %}
+  <li>
+    {{ wine.title }}
+  </li>
+
+  {% endfor %}
+</ul>
+
+
+{% endblock %}

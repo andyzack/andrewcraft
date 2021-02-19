@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 2c1a5bc6-5250-4cfa-b26e-46fbe8468be1
+handle: starterPicks
+instructions: ''
+name: 'Starter Picks'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
